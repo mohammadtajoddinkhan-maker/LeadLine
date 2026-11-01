@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-sans: "Manrope", sans-serif;
+  --font-signature: "Caveat", cursive;
+
+  --color-cream: #F7F2EA;
+  --color-charcoal: #1F2A33;
+  --color-shield: #2E5E8C;
+  --color-maple: #C4552B;
+}
+
+/* Base resets & typography */
+:root {
+  --warm-cream: #F7F2EA;
+  --north-charcoal: #1F2A33;
+  --shield-blue: #2E5E8C;
+  --maple-ember: #C4552B;
+}
+
+body {
+  background-color: var(--warm-cream);
+  color: var(--north-charcoal);
+  font-family: 'Manrope', sans-serif;
+  overflow-x: hidden;
+}
+
+.font-serif-display {
+  font-family: 'Instrument Serif', Georgia, serif;
+}
+
+.font-signature {
+  font-family: 'Caveat', cursive;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F2EA;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
